@@ -12,10 +12,8 @@ public class PlayerList{
 	public PlayerList(){
 		count = 0;
 		storage = new Player [INITIAL_SIZE];
-		
 	}
 
- 
 	//return the element at position index
 
 	public Player get (int index){
@@ -61,7 +59,6 @@ public class PlayerList{
 		return count;
 	}
 
-
 	//add the player p to the list
 
 	public void add (Player p){
@@ -76,7 +73,6 @@ public class PlayerList{
 		storage[count]=p;
 		count++;
 	}
-
 
 	//return the index where p is in the list, -1 otherwise
 
