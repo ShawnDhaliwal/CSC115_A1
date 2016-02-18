@@ -1,7 +1,7 @@
 public class Team
 {
 	private String name;
-	private PlayerList	players;
+	private PlayerList players;
 	
 	// Purpose:
 	//	initialize this instance of Team
