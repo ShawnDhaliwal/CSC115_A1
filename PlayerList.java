@@ -25,35 +25,35 @@ public class PlayerList
 
 	public void remove (int index) {
 		int i = 0;
-			if(count == 0)
-				storage=storage;
-				 else if (count==1)
-						count--;
-					else if(storage.length>1){	
-							while(i<storage.length-1){
-									if(i<index)
-										i++;
-										else if (i==index){
-												storage[index]=storage[i+1];
-												i++;
-											}			
-											else if (i>index){
-													storage[i]=storage[i+1];
-													i++;	
-												}
-							}	
+		if(count == 0)
+			storage=storage;
+		else if (count==1)
+			count--;
+		else if(storage.length>1){	
+			while(i<storage.length-1){
+				if(i<index)
+					i++;
+				else if (i==index){
+					storage[index]=storage[i+1];
+					i++;
+				}			
+				else if (i>index){
+					storage[i]=storage[i+1];
+					i++;	
+				}
+			}	
 	
-						Player [] temp = new Player [storage.length-1];
-						count--;
+			Player [] temp = new Player [storage.length-1];
+			count--;
 		
-							for(int z = 0; z<temp.length; z++)
-								temp[z]=storage[z];
+			for(int z = 0; z<temp.length; z++)
+				temp[z]=storage[z];
 			
-						storage = new Player [count];
+			storage = new Player [count];
 		
-							for (int z = 0; z<storage.length; z++)
-								storage[z]=temp[z];	
-					}
+			for (int z = 0; z<storage.length; z++)
+				storage[z]=temp[z];	
+		}
 	}
 
 	//return the number of elements in the list
