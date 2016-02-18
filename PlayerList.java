@@ -58,7 +58,6 @@ public class PlayerList{
 	//return the number of elements in the list
 
 	public int size(){
-	
 		return count;
 	}
 
