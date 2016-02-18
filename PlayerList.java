@@ -59,6 +59,7 @@ public class PlayerList
 	//return the number of elements in the list
 
 	public int size(){
+	
 		return count;
 	}
 
@@ -68,15 +69,14 @@ public class PlayerList
 	public void add (Player p){
 		if(storage.length==count){
 			Player [] temp = new Player [count*2];
-				for(int i = 0; i<storage.length; i++){
-					temp[i]=storage[i];
-				}
+			for(int i = 0; i<storage.length; i++){
+				temp[i]=storage[i];
+			}
 			storage=temp;
 		}
 		
 		storage[count]=p;
-			count++;
-	
+		count++;
 	}
 
 
@@ -85,12 +85,12 @@ public class PlayerList
 	public int find (Player p)
 	{	
 		int i = 0;
-			while(i<storage.length) {
-				if (p.equals(storage[i])){
-					return i;
-				}
-					i++;
+		while(i<storage.length) {
+			if (p.equals(storage[i])){
+				return i;
 			}
+			i++;
+		}
 		return -1;		
 	}
 
