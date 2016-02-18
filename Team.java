@@ -3,7 +3,6 @@ public class Team
 	private String name;
 	private PlayerList	players;
 	
-	
 	// Purpose:
 	//	initialize this instance of Team
 	// 	with no Player
