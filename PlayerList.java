@@ -1,5 +1,4 @@
-public class PlayerList
-{
+public class PlayerList{
 	private static final int INITIAL_SIZE = 2;
 	
 	private Player[] storage;
@@ -82,8 +81,7 @@ public class PlayerList
 
 	//return the index where p is in the list, -1 otherwise
 
-	public int find (Player p)
-	{	
+	public int find (Player p) {	
 		int i = 0;
 		while(i<storage.length) {
 			if (p.equals(storage[i])){
