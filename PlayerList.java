@@ -16,7 +16,7 @@ public class PlayerList
 		
 	}
 
-: 
+ 
 	//return the element at position index
 
 	public Player get (int index){
