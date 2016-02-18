@@ -1,5 +1,4 @@
-public class Player
-{
+public class Player{
 	private String name;
 	private int battingAvg;
 
@@ -10,35 +9,28 @@ public class Player
 	public Player (String name){
 		battingAvg=0;
 		this.name = name;
-		
 	}
 
 	// Purpose:
 	//	Initialize this instance of Player
 	//
-	public Player (String name, int battingAvg)
-	{
+	public Player (String name, int battingAvg){
 		this.name = name;
 		this.battingAvg = battingAvg;
-		
 	}
 
 	// Purpose:
 	// 	Change the name associated with this Player
 	// 	to be newname
 	//
-	public void setName (String newName)
-	{
+	public void setName (String newName){
 		name = newName;
-	
 	}
 
 	// Purpose:
 	//	Return the name associated with this Player
 	//
-	public String getName()
-	{
-			
+	public String getName(){
 		return name;
 	}
 
@@ -46,17 +38,15 @@ public class Player
 	//	Change the battingAvg associated with this Player 
 	//	to be newbattingAvg
 	//	
-	public void setBattingAvg (int newBattingAvg)
-	{
+	public void setBattingAvg (int newBattingAvg){
 		battingAvg = newBattingAvg;
 	}
 
 	// Purpose:
 	//	Return the battingAvg associated with this Player
 	//
-	public int getBattingAvg()
-	{
-        return battingAvg;
+	public int getBattingAvg(){
+		return battingAvg;
 	}
 
 	// Purpose:
@@ -83,13 +73,10 @@ public class Player
 	//	
 	//	p.equals(q)	- returns true
 	//	p.equals(r)	- returns false
-	public boolean equals (Player other)
-	{	
+	public boolean equals (Player other){	
 		if (other.getName().equals(this.name))
 			return true;
-			
 		return false;	
-		
 	}
 
 	// Purpose:
@@ -103,8 +90,7 @@ public class Player
 	//	
 	//	p.toString() returns	Derek Jeter:265
 	//
-	public String toString()
-	{
+	public String toString(){
 		return name+":"+battingAvg;
 	}
 }
